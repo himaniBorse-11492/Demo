@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.nxglabs.mvvmarchitecture.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment android:id="@+id/placeholder" >
+        <action
+            android:id="@+id/action_placeholder_to_plusOneFragment"
+            app:destination="@id/plusOneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/plusOneFragment"
+        android:name="com.nxglabs.mvvmarchitecture.PlusOneFragment"
+        android:label="fragment_plus_one"
+        tools:layout="@layout/fragment_plus_one" />
+</navigation>
